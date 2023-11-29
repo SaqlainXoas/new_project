@@ -11,8 +11,8 @@ A widely available dataset from Mendeley was utilized for model training, aiming
 2.	Myocardial Infarction
 3.	Abnormal Heartbeat
 4.	History of Myocardial Infarction
-•	Total Images: 16,704 images were extracted from the Mendeley dataset.
-•	Training Data: 9,600 images (80%) were allocated for training the model.
+Total Images: 16,704 images were extracted from the Mendeley dataset.
+Training Data: 9,600 images (80%) were allocated for training the model.
 •	Testing Data: 2,400 images (20%) were reserved for testing the model.
 
 # Data Preprocessing and Lead Segmentation
@@ -24,7 +24,7 @@ A widely available dataset from Mendeley was utilized for model training, aiming
 ![image](https://github.com/SaqlainXoas/CardioVision_project/assets/104307095/37812015-2dee-441e-8ef4-467115f0766d)
 
 # CNN Architecture
-•	Development of Convolutional Neural Network (CNN) for feature extraction.
+•	Development of Convolutional Neural Network (CNN) for feature extraction. <br>
 •	Utilization of Conv2D, MaxPooling2D, and Dense layers for pattern recognition.
 •	Optimization with Adam optimizer, sparse categorical cross-entropy loss, and class balancing.
 
