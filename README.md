@@ -1,13 +1,34 @@
 # CARDIOVISION: REAL-TIME ECG IMAGE-BASED HEART DISEASE DETECTION USING DEEP LEARNING
 Dataset ECG: https://data.mendeley.com/datasets/gwbz3fsgp8/2 
 save it in folder name as : "ECG_data"
-
-Cardiovascular diseases (CVD) are global health concerns that can be reduced through early prevention and improved patient risk assessment and treatment. Early detection of CVD is critical for saving lives and reducing mortality rates. This project is primarily focused on introducing an innovative approach to CVD detection deep learning techniques for image analysis. 
+# Introduction
+Cardiovascular diseases (CVD) are global health concerns that can be reduced through early prevention and improved patient risk assessment and treatment. 
+Early detection of CVD is critical for saving lives and reducing mortality rates. This project is primarily focused on introducing an innovative approach to CVD detection deep learning techniques for image analysis. 
 A widely available dataset from Mendeley was utilized for model training, aiming to enhance the precision of heart disease detection.
-Dataset ECG: https://data.mendeley.com/datasets/gwbz3fsgp8/2 
-The primary steps of this project involve segmenting ECG's 12 leads, including preprocessing, 
-colour noise removal, 
-grayscale conversion, 
-segmenting into 12 distinct lead images. 
-Each lead image corresponds to specific ECG leads (I, II, III, AvF, AvR) and is categorized into different classes of Normal and abnormal, Myocardial Infarction Patients, and History of Myocardial Infarction. 
-The deep learning model demonstrated impressive results with a loss of 0.3203 and an accuracy rate of 90.21%. Furthermore, the precision, recall, and F1-score consistently exceeded 0.85 across all categories, underscoring the model's efficacy in disease classification. The main feature of this project includes a user-friendly web-app interface, facilitating the swift upload and analysis of ECG images by patients and healthcare officials, prioritizing ethical data handling, and improving healthcare accessibility. The objective is to enable early detection, efficient clinical decision-making, and a significant reduction in CVD-related mortality rates. 
+# Dataset Source: Mendeley provided a globally available dataset used for model training.
+•	Categories for Classification: The ECG images were categorized into four classes:
+1.	Normal
+2.	Myocardial Infarction
+3.	Abnormal Heartbeat
+4.	History of Myocardial Infarction
+•	Total Images: 16,704 images were extracted from the Mendeley dataset.
+•	Training Data: 9,600 images (80%) were allocated for training the model.
+•	Testing Data: 2,400 images (20%) were reserved for testing the model.
+
+# Data Preprocessing and Lead Segmentation
+•	Resizing and cropping ECG images for standardization.
+•	Background removal using grayscale conversion, thresholding, and morphological operations.
+•	Extraction of 12 leads (I, II, III, aVR, aVL, aVF, V1-V6) and their negative versions.
+•	Logical progression in pixel coordinates for consistent and accurate segmentation.
+
+# CNN Architecture
+•	Development of Convolutional Neural Network (CNN) for feature extraction.
+•	Utilization of Conv2D, MaxPooling2D, and Dense layers for pattern recognition.
+•	Optimization with Adam optimizer, sparse categorical cross-entropy loss, and class balancing.
+
+# Outcomes:
+•	The aim of this study to proposed a Deep Learning CNN-based model for the detection of heart diseases.
+•	The CNN architecture performs well, achieving an accuracy of 89% with a loss of 42%
+•	The findings of this study can be used as a foundation for the advanced detection of different heart diseases.
+
+
