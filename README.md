@@ -17,9 +17,11 @@ A widely available dataset from Mendeley was utilized for model training, aiming
 
 # Data Preprocessing and Lead Segmentation
 •	Resizing and cropping ECG images for standardization.
-•	Background removal using grayscale conversion, thresholding, and morphological operations.
+•	Background removal using grayscale conversion, thresholding, Anti-Aliasing and morphological operations.
 •	Extraction of 12 leads (I, II, III, aVR, aVL, aVF, V1-V6) and their negative versions.
 •	Logical progression in pixel coordinates for consistent and accurate segmentation.
+
+![image](https://github.com/SaqlainXoas/CardioVision_project/assets/104307095/37812015-2dee-441e-8ef4-467115f0766d)
 
 # CNN Architecture
 •	Development of Convolutional Neural Network (CNN) for feature extraction.
